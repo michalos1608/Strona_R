@@ -520,15 +520,15 @@ project makes it easier to run your code on other machines.</p>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcommichalos1608StronaRtreed78d50d6de89f6d9f0dd329931b653a9a4e32e7ftargetblankd78d50da">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcommichalos1608StronaRtreef2dd0f183c21615fb9c96417d72b46bca38dc674targetblankf2dd0f1a">
 <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span> <strong>Repository version:</strong>
-<a href="https://github.com/michalos1608/Strona_R/tree/d78d50d6de89f6d9f0dd329931b653a9a4e32e7f" target="_blank">d78d50d</a>
+<a href="https://github.com/michalos1608/Strona_R/tree/f2dd0f183c21615fb9c96417d72b46bca38dc674" target="_blank">f2dd0f1</a>
 </a>
 </p>
 </div>
 <div
-id="strongRepositoryversionstrongahrefhttpsgithubcommichalos1608StronaRtreed78d50d6de89f6d9f0dd329931b653a9a4e32e7ftargetblankd78d50da"
+id="strongRepositoryversionstrongahrefhttpsgithubcommichalos1608StronaRtreef2dd0f183c21615fb9c96417d72b46bca38dc674targetblankf2dd0f1a"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -538,7 +538,7 @@ reproducibility.
 </p>
 <p>
 The results in this page were generated with repository version
-<a href="https://github.com/michalos1608/Strona_R/tree/d78d50d6de89f6d9f0dd329931b653a9a4e32e7f" target="_blank">d78d50d</a>.
+<a href="https://github.com/michalos1608/Strona_R/tree/f2dd0f183c21615fb9c96417d72b46bca38dc674" target="_blank">f2dd0f1</a>.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -601,6 +601,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/michalos1608/Strona_R/blob/f2dd0f183c21615fb9c96417d72b46bca38dc674/analysis/analiza.Rmd" target="_blank">f2dd0f1</a>
+</td>
+<td>
+michalos1608
+</td>
+<td>
+2026-01-18
+</td>
+<td>
+update7
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/michalos1608/Strona_R/5d3cbc2d84314683c2d65e0ef72abbd07642b327/docs/analiza.html" target="_blank">5d3cbc2</a>
+</td>
+<td>
+michalos1608
+</td>
+<td>
+2026-01-18
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -1087,12 +1121,6 @@ kable(statystyki_kontynenty, caption = &quot;Tabela 2: Statystyki zagregowane dl
 </div>
 <div id="wizualizacja" class="section level2">
 <h2>3. Wizualizacja</h2>
-</div>
-<div id="section" class="section level1">
-<h1></h1>
-</div>
-<div id="section-1" class="section level1">
-<h1></h1>
 <div id="wykres-1" class="section level3">
 <h3>Wykres 1</h3>
 <pre class="r"><code>ggplot(statystyki_kontynenty, aes(x = continent, y = srednia_dlugosc_zycia, fill = continent)) +
@@ -1167,12 +1195,6 @@ michalos1608
 mieszkańcy Oceanii oraz Europy. -Afryka wypada najgorzej w zestawieniu,
 ze średnią znacząco odbiegającą od pozostałych kontynentów.</p>
 </div>
-</div>
-<div id="section-2" class="section level1">
-<h1></h1>
-</div>
-<div id="section-3" class="section level1">
-<h1></h1>
 <div id="wykres-2" class="section level3">
 <h3>Wykres 2</h3>
 <pre class="r"><code>ggplot(dane_2007, aes(x = gdpPercap, y = lifeExp, color = continent, size = pop)) +
@@ -1248,8 +1270,10 @@ michalos1608
 </div>
 <p>Wnioski : -Im bogatszy kraj, tym statystycznie dłuższe życie jego
 mieszkańców. -Najdynamiczniejszy wzrost długości życia następuje przy
-przejściu z bardzo niskiego do średniego poziomu zamożności. # # ###
-Wykres 3</p>
+przejściu z bardzo niskiego do średniego poziomu zamożności.</p>
+</div>
+<div id="wykres-3" class="section level3">
+<h3>Wykres 3</h3>
 <pre class="r"><code>ggplot(dane_2007, aes(x = continent, y = gdpPercap, fill = continent)) +
   geom_boxplot() +
   scale_y_log10() +
