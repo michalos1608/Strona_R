@@ -6,29 +6,54 @@ output:
 ---
 
 ## Dane osobowe
-* **Imię i nazwisko:** Jan Kowalski
-* **Adres e-mail:** jan.kowalski@student.pl
-* **Telefon:** 123-456-789
+
+-   **Imię i nazwisko:** Jan Kowalski
+-   **Adres e-mail:** [jan.kowalski\@student.pl](mailto:jan.kowalski@student.pl){.email}
+-   **Telefon:** 123-456-789
 
 ## Wykształcenie
 
-### Uniwersytet Ekonomiczny (2022 - obecnie)
-* **Kierunek:** Informatyka i Ekonometria
-* **Specjalność:** Analityka Danych
+### Uniwersytet Przyrodniczy (2023 - obecnie)
 
-### II Liceum Ogólnokształcące (2018 - 2022)
-* Profil matematyczno-informatyczny
+-   **Kierunek:** Informatyka i Inzynieria Danych
+-   **Specjalność:** Analityka Danych
+
+### Technikum geodezyjno-drogowe (2018 - 2022)
+
+-   Profil geodezyjny
 
 ## Umiejętności
-* **Języki programowania:** R (średniozaawansowany), SQL (podstawy), Python (podstawy)
-* **Narzędzia:** RStudio, Git, MS Excel, Power BI
-* **Języki obce:** Angielski (B2), Niemiecki (A2)
+
+### Programowanie
+
+-   **Języki programowania:** R (podstawy), SQL (podstawy), Python (podstawy), C++ (podstawy), C# (podstawy)
+-   **Narzędzia:** RStudio, Git, MS Excel, Power Point
+-   **Języki obce:** Angielski (B2), Niemiecki (A2), Włoski(A2), Hiszpański(A2)
+
+### Mechanika samochodowa
+
+- Podstawowe naprawy: Wymiana klockow, tarcz hamulcowych
+
+### Ogrodnictwo
+
+- Podstawowe prace ogrodnicze
+
 
 ## Doświadczenie i Projekty
 
 ### Analiza sprzedaży detalicznej (Projekt studencki, 2023)
-* Pobranie i czyszczenie danych sprzedażowych w R.
-* Wizualizacja trendów sezonowych przy użyciu `ggplot2`.
+
+-   Pobranie i czyszczenie danych sprzedażowych w R.
+-   Wizualizacja trendów sezonowych przy użyciu `ggplot2`.
 
 ### Strona internetowa w workflowr (2024)
-* Stworzenie własnej strony wizytówki (ten projekt).
+
+-   Stworzenie własnej strony wizytówki (ten projekt).
+
+### Strona internetowa ASP .net
+
+-   Stworzenie wlasnej strony sklepu internetowego
+
+### Gra w silniku Unity
+
+-   Stworzenie gry opartej na silniku Unity
