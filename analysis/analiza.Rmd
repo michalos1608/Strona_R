@@ -65,7 +65,7 @@ ggplot(statystyki_kontynenty, aes(x = continent, y = srednia_dlugosc_zycia, fill
   theme_minimal()
   
 ```
-# Wnioski : Najwyższą średnią długością życia charakteryzują się mieszkańcy Oceanii oraz Europy
+Wnioski : Najwyższą średnią długością życia charakteryzują się mieszkańcy Oceanii oraz Europy
 
 #
 #
