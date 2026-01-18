@@ -1,10 +1,6 @@
 ---
-title: "Analiza danych w R"
-author: "Twoje Imię i Nazwisko"
-output:
-  workflowr::wflow_html:
-    code_folding: show
-    toc: true
+title: "Analiza Danych: Sen Ssaków"
+output: workflowr::wflow_html
 ---
 
 ## 1. Opis zbioru danych
