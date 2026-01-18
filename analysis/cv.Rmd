@@ -1,0 +1,34 @@
+---
+title: "Moje CV"
+output:
+  workflowr::wflow_html:
+    toc: true
+---
+
+## Dane osobowe
+* **Imię i nazwisko:** Jan Kowalski
+* **Adres e-mail:** jan.kowalski@student.pl
+* **Telefon:** 123-456-789
+
+## Wykształcenie
+
+### Uniwersytet Ekonomiczny (2022 - obecnie)
+* **Kierunek:** Informatyka i Ekonometria
+* **Specjalność:** Analityka Danych
+
+### II Liceum Ogólnokształcące (2018 - 2022)
+* Profil matematyczno-informatyczny
+
+## Umiejętności
+* **Języki programowania:** R (średniozaawansowany), SQL (podstawy), Python (podstawy)
+* **Narzędzia:** RStudio, Git, MS Excel, Power BI
+* **Języki obce:** Angielski (B2), Niemiecki (A2)
+
+## Doświadczenie i Projekty
+
+### Analiza sprzedaży detalicznej (Projekt studencki, 2023)
+* Pobranie i czyszczenie danych sprzedażowych w R.
+* Wizualizacja trendów sezonowych przy użyciu `ggplot2`.
+
+### Strona internetowa w workflowr (2024)
+* Stworzenie własnej strony wizytówki (ten projekt).

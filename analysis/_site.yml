@@ -1,14 +1,16 @@
 name: "Strona_R"
 output_dir: ../docs
 navbar:
-  title: "Strona_R"
+  title: "Moje Portfolio"
   left:
-  - text: Home
-    href: index.html
-  - text: About
-    href: about.html
-  - text: License
-    href: license.html
+    - text: "Home"
+      href: index.html
+    - text: "CV"
+      href: cv.html
+    - text: "Analiza Danych"
+      href: analiza.html
+    - text: "Prezentacja"
+      href: prezentacja.html
 output:
   workflowr::wflow_html:
     toc: yes
