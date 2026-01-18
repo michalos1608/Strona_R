@@ -13,12 +13,11 @@ Nazywam się Michał.
 Studiuję Informatykę i Inżynierię Danych.
 W tej prezetacji przedstawie moje zainteresowania
 
----
+
 
 ## Wędkarstwo
 
 Wędkarstwo to dla mnie idealny balans między sportem a odpoczynkiem.
----
 
 ### Gatunki ryb
 
@@ -26,7 +25,7 @@ Wędkarstwo to dla mnie idealny balans między sportem a odpoczynkiem.
 * **Okoń** – mniejszy, ale bardzo waleczny i inteligentny.
 * **Sandacz** – najbardziej wymagający, żerujący głównie o zmierzchu.
 
----
+
 
 ## Aktywność w Sezonie (Wykres R)
 
@@ -49,7 +48,7 @@ ggplot(rybki, aes(x = gatunek, y = ilosc)) +
        y = "Ilość (szt.)",
        x = "Gatunek")
 ```
----
+
 
 ## Gry komputerowe
 
@@ -63,12 +62,12 @@ Ulubione gry:
 ![](assets/lol.jpg){width=40%}
 
 
----
+
 
 
 ## Czas w grach
 
-```{R}
+```{r}
 #Dane o czasie gry
 
 czas <- data.frame(
@@ -86,7 +85,7 @@ ggplot(czas, aes(x= gra, y=godziny))+
        x= "",
        y="godziny")
 ```
----
+
 
 ## Dziękuję za uwagę
 
