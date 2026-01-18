@@ -9,10 +9,7 @@ output:
 
 ## 1. Opis zbioru danych
 
-W tej analizie wykorzystujemy zbiór danych `gapminder`. Zawiera on statystyki dotyczące krajów z całego świata, obejmujące:
-* **PKB na osobę** (gdpPercap),
-* **Oczekiwaną długość życia** (lifeExp),
-* **Populację** (pop).
+W tej analizie wykorzystujemy zbiór danych `gapminder`. Zawiera on statystyki dotyczące krajów z całego świata, obejmujące: **PKB na osobę** (gdpPercap), **Oczekiwaną długość życia** (lifeExp), **Populację** (pop).
 
 Dane pochodzą z pakietu `gapminder` i pozwalają na śledzenie zmian demograficznych i ekonomicznych na przestrzeni lat.
 
@@ -22,14 +19,16 @@ Dane pochodzą z pakietu `gapminder` i pozwalają na śledzenie zmian demografic
 library(tidyverse)
 library(gapminder)
 library(knitr)
-
+```
 
 ### Pierwsze 6 wierszy
 
-kable(head(gapminder), caption = "Pierwsze 6 wierszy zbioru gapminder")
+```{r}
+wiersze <- kable(head(gapminder), caption = "Pierwsze 6 wierszy zbioru gapminder")
+wiersze
+```
 
 ## 2. Przetwarzanie danych
-
 
 ### Filtrowanie danych dla roku 2007
 
@@ -40,6 +39,7 @@ dane_2007 <- gapminder %>%
 ```
 
 ### Grupowanie danych według kontynentów
+
 ```{r}
 statystyki_kontynenty <- dane_2007 %>%
   group_by(continent) %>%
