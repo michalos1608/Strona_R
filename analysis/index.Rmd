@@ -10,10 +10,10 @@ output:
 
 Nazywam się Michal Kowalsky i jestem studentem Informatyki i Inżynierii danych.
 
-To jest projekt zaliczeniowy stworzony w celu demonstracji umiejętności pracy z: \* Językiem R \* Systemem `workflowr` \* Reprodukowalną analizą danych
+To jest projekt zaliczeniowy stworzony w celu demonstracji umiejętności pracy z: Językiem R i Systemem `workflowr`
 
 ### Moja Uczelnia
 
-![Budynek mojej uczelni](images/UPP.jpg){width="50%"}
+![Budynek_uczelni](images/UPP.jpg){width="50%"}
 
 Strona została wygenerowana przy użyciu pakietu `workflowr`.

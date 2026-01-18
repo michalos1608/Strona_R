@@ -22,7 +22,7 @@ Dane pochodzą z pakietu `gapminder` i pozwalają na śledzenie zmian demografic
 library(tidyverse)
 library(gapminder)
 library(knitr)
-```
+
 
 ### Pierwsze 6 wierszy
 
