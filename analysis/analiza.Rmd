@@ -49,8 +49,7 @@ kable(statystyki_kontynenty, caption = "Tabela 2: Statystyki zagregowane dla kon
 ```
 
 ## 3. Wizualizacja
-#
-#
+
 ### Wykres 1
 
 ```{r}
@@ -69,8 +68,6 @@ Wnioski :
 -Najwyższą średnią długością życia charakteryzują się mieszkańcy Oceanii oraz Europy. 
 -Afryka wypada najgorzej w zestawieniu, ze średnią znacząco odbiegającą od pozostałych kontynentów.
 
-#
-#
 ### Wykres 2
 ```{r}
 
@@ -90,8 +87,7 @@ ggplot(dane_2007, aes(x = gdpPercap, y = lifeExp, color = continent, size = pop)
 Wnioski : 
 -Im bogatszy kraj, tym statystycznie dłuższe życie jego mieszkańców.
 -Najdynamiczniejszy wzrost długości życia następuje przy przejściu z bardzo niskiego do średniego poziomu zamożności.
-#
-#
+
 ### Wykres 3
 ```{r}
 
