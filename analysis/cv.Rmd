@@ -7,8 +7,8 @@ output:
 
 ## Dane osobowe
 
--   **Imię i nazwisko:** Jan Kowalski
--   **Adres e-mail:** [jan.kowalski\@student.pl](mailto:jan.kowalski@student.pl){.email}
+-   **Imię i nazwisko:** Michal Kowalsky
+-   **Adres e-mail:** [michal.kowalsky\@student.pl](mailto:michal.kowalsky@student.pl){.email}
 -   **Telefon:** 123-456-789
 
 ## Wykształcenie
