@@ -11,18 +11,28 @@ W tej sekcji przeprowadzimy analizę zbioru danych `gapminder`. Zbiór ten zawie
 
 ### Ładowanie pakietów i danych
 
-\`\`\`{r setup, message=FALSE, warning=FALSE} library(tidyverse) library(gapminder) library(knitr)
+```{r setup, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(gapminder)
+library(knitr)
+```
 
 # Podgląd danych
 
 kable(head(gapminder), caption = "Pierwsze 6 wierszy zbioru gapminder")
 
-# 1. Filtrowanie i Mutacja
+### 1. Filtrowanie i Mutacja
+
+```{r}
 dane_2007 <- gapminder %>%
   filter(year == 2007) %>%
   mutate(pkb_calkowite = gdpPercap * pop)
+```
 
 # 2. Agregacja
+
+```{r}
+
 statystyki_kontynenty <- dane_2007 %>%
   group_by(continent) %>%
   summarise(
@@ -30,9 +40,16 @@ statystyki_kontynenty <- dane_2007 %>%
     srednie_pkb = mean(gdpPercap),
     liczba_krajow = n()
   )
+  
+```
+
+```{r}
 
 kable(statystyki_kontynenty, caption = "Statystyki dla kontynentów w 2007 roku")
 
+```
+
+```{r}
 
 ggplot(statystyki_kontynenty, aes(x = continent, y = srednia_dlugosc_zycia, fill = continent)) +
   geom_col() +
@@ -43,7 +60,10 @@ ggplot(statystyki_kontynenty, aes(x = continent, y = srednia_dlugosc_zycia, fill
   ) +
   theme_minimal()
   
-  
+```
+
+```{r}
+
   ggplot(dane_2007, aes(x = gdpPercap, y = lifeExp, color = continent, size = pop)) +
   geom_point(alpha = 0.7) +
   scale_x_log10() + # Skala logarytmiczna dla czytelności
@@ -56,7 +76,10 @@ ggplot(statystyki_kontynenty, aes(x = continent, y = srednia_dlugosc_zycia, fill
   ) +
   theme_bw()
   
-  
+```
+
+```{r}
+
   ggplot(dane_2007, aes(x = continent, y = gdpPercap, fill = continent)) +
   geom_boxplot() +
   scale_y_log10() +
@@ -66,3 +89,5 @@ ggplot(statystyki_kontynenty, aes(x = continent, y = srednia_dlugosc_zycia, fill
     y = "PKB na osobę"
   ) +
   theme_light()
+  
+```
