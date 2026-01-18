@@ -65,11 +65,13 @@ ggplot(statystyki_kontynenty, aes(x = continent, y = srednia_dlugosc_zycia, fill
   theme_minimal()
   
 ```
-Wnioski : Najwyższą średnią długością życia charakteryzują się mieszkańcy Oceanii oraz Europy
+Wnioski : 
+-Najwyższą średnią długością życia charakteryzują się mieszkańcy Oceanii oraz Europy. 
+-Afryka wypada najgorzej w zestawieniu, ze średnią znacząco odbiegającą od pozostałych kontynentów.
 
 #
 #
-### Wykres 1
+### Wykres 2
 ```{r}
 
 ggplot(dane_2007, aes(x = gdpPercap, y = lifeExp, color = continent, size = pop)) +
@@ -85,7 +87,12 @@ ggplot(dane_2007, aes(x = gdpPercap, y = lifeExp, color = continent, size = pop)
   theme_bw()
 
 ```
-
+Wnioski : 
+-Im bogatszy kraj, tym statystycznie dłuższe życie jego mieszkańców.
+-Najdynamiczniejszy wzrost długości życia następuje przy przejściu z bardzo niskiego do średniego poziomu zamożności.
+#
+#
+### Wykres 3
 ```{r}
 
 ggplot(dane_2007, aes(x = continent, y = gdpPercap, fill = continent)) +
@@ -98,3 +105,6 @@ ggplot(dane_2007, aes(x = continent, y = gdpPercap, fill = continent)) +
   ) +
   theme_light()
 ```
+Wnioski : 
+-Europa i Oceania mają najwyższą medianę PKB
+-Wykres boxplot ujawnia stopień nierówności ekonomicznych wewnątrz kontynentów.
