@@ -1,13 +1,20 @@
 ---
-title: "Analiza_Danych"
+title: "Analiza danych w R"
+author: "Twoje Imię i Nazwisko"
 output:
   workflowr::wflow_html:
     code_folding: show
+    toc: true
 ---
 
-## Wstęp
+## 1. Opis zbioru danych
 
-W tej sekcji przeprowadzimy analizę zbioru danych `gapminder`. Zbiór ten zawiera dane o oczekiwanej długości życia, PKB na osobę i populacji w różnych krajach na przestrzeni lat.
+W tej analizie wykorzystujemy zbiór danych `gapminder`. Zawiera on statystyki dotyczące krajów z całego świata, obejmujące:
+* **PKB na osobę** (gdpPercap),
+* **Oczekiwaną długość życia** (lifeExp),
+* **Populację** (pop).
+
+Dane pochodzą z pakietu `gapminder` i pozwalają na śledzenie zmian demograficznych i ekonomicznych na przestrzeni lat.
 
 ### Ładowanie pakietów i danych
 
@@ -17,11 +24,14 @@ library(gapminder)
 library(knitr)
 ```
 
-# Podgląd danych
+### Pierwsze 6 wierszy
 
 kable(head(gapminder), caption = "Pierwsze 6 wierszy zbioru gapminder")
 
-### 1. Filtrowanie i Mutacja
+## 2. Przetwarzanie danych
+
+
+### Filtrowanie danych dla roku 2007
 
 ```{r}
 dane_2007 <- gapminder %>%
@@ -29,25 +39,20 @@ dane_2007 <- gapminder %>%
   mutate(pkb_calkowite = gdpPercap * pop)
 ```
 
-# 2. Agregacja
-
+### Grupowanie danych według kontynentów
 ```{r}
-
 statystyki_kontynenty <- dane_2007 %>%
   group_by(continent) %>%
   summarise(
     srednia_dlugosc_zycia = mean(lifeExp),
-    srednie_pkb = mean(gdpPercap),
+    srednie_pkb_per_capita = mean(gdpPercap),
     liczba_krajow = n()
   )
-  
+
+kable(statystyki_kontynenty, caption = "Tabela 2: Statystyki zagregowane dla kontynentów (2007)")
 ```
 
-```{r}
-
-kable(statystyki_kontynenty, caption = "Statystyki dla kontynentów w 2007 roku")
-
-```
+## 3. Wizualizacja
 
 ```{r}
 
@@ -64,23 +69,23 @@ ggplot(statystyki_kontynenty, aes(x = continent, y = srednia_dlugosc_zycia, fill
 
 ```{r}
 
-  ggplot(dane_2007, aes(x = gdpPercap, y = lifeExp, color = continent, size = pop)) +
+ggplot(dane_2007, aes(x = gdpPercap, y = lifeExp, color = continent, size = pop)) +
   geom_point(alpha = 0.7) +
-  scale_x_log10() + # Skala logarytmiczna dla czytelności
+  scale_x_log10() + 
   labs(
     title = "Zależność między PKB a długością życia",
-    x = "PKB na osobę (skala log)",
+    x = "PKB na osobę (skala logarytmiczna)",
     y = "Oczekiwana długość życia",
     color = "Kontynent",
     size = "Populacja"
   ) +
   theme_bw()
-  
+
 ```
 
 ```{r}
 
-  ggplot(dane_2007, aes(x = continent, y = gdpPercap, fill = continent)) +
+ggplot(dane_2007, aes(x = continent, y = gdpPercap, fill = continent)) +
   geom_boxplot() +
   scale_y_log10() +
   labs(
@@ -89,5 +94,4 @@ ggplot(statystyki_kontynenty, aes(x = continent, y = srednia_dlugosc_zycia, fill
     y = "PKB na osobę"
   ) +
   theme_light()
-  
 ```
