@@ -1,16 +1,20 @@
-name: "Strona_R"
+name: Strona_R
 output_dir: ../docs
 navbar:
-  title: "Moje Portfolio"
+  title: Moje Portfolio
   left:
-    - text: "Home"
-      href: index.html
-    - text: "CV"
-      href: cv.html
-    - text: "Analiza Danych"
-      href: analiza.html
-    - text: "Prezentacja"
-      href: prezentacja.html
+  - text: Home
+    href: index.html
+  - text: CV
+    href: cv.html
+  - text: Analiza Danych
+    href: analiza.html
+  - text: Prezentacja
+    href: prezentacja.html
+  right:
+  - icon: fab fa-github
+    text: Source code
+    href: https://github.com/michalos1608/Strona_R
 output:
   workflowr::wflow_html:
     toc: yes
