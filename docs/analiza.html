@@ -534,15 +534,15 @@ project makes it easier to run your code on other machines.</p>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcommichalos1608StronaRtree03273f695626232499e3a3688de4a4b88617ab4ctargetblank03273f6a">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcommichalos1608StronaRtree75cd57c62768419864ad598637b6a71cdc57ece1targetblank75cd57ca">
 <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span> <strong>Repository version:</strong>
-<a href="https://github.com/michalos1608/Strona_R/tree/03273f695626232499e3a3688de4a4b88617ab4c" target="_blank">03273f6</a>
+<a href="https://github.com/michalos1608/Strona_R/tree/75cd57c62768419864ad598637b6a71cdc57ece1" target="_blank">75cd57c</a>
 </a>
 </p>
 </div>
 <div
-id="strongRepositoryversionstrongahrefhttpsgithubcommichalos1608StronaRtree03273f695626232499e3a3688de4a4b88617ab4ctargetblank03273f6a"
+id="strongRepositoryversionstrongahrefhttpsgithubcommichalos1608StronaRtree75cd57c62768419864ad598637b6a71cdc57ece1targetblank75cd57ca"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -552,7 +552,7 @@ reproducibility.
 </p>
 <p>
 The results in this page were generated with repository version
-<a href="https://github.com/michalos1608/Strona_R/tree/03273f695626232499e3a3688de4a4b88617ab4c" target="_blank">03273f6</a>.
+<a href="https://github.com/michalos1608/Strona_R/tree/75cd57c62768419864ad598637b6a71cdc57ece1" target="_blank">75cd57c</a>.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -569,9 +569,6 @@ were generated:
 Untracked files:
     Untracked:  analysis/images/
     Untracked:  analysis/prezentacja.qmd
-
-Unstaged changes:
-    Modified:   analysis/index.Rmd
 
 </code></pre>
 <p>
@@ -616,6 +613,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/michalos1608/Strona_R/blob/75cd57c62768419864ad598637b6a71cdc57ece1/analysis/analiza.Rmd" target="_blank">75cd57c</a>
+</td>
+<td>
+michalos1608
+</td>
+<td>
+2026-01-18
+</td>
+<td>
+update4
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/michalos1608/Strona_R/d4cf33b145c54ace8043fe085f0970ba60f195fb/docs/analiza.html" target="_blank">d4cf33b</a>
+</td>
+<td>
+michalos1608
+</td>
+<td>
+2026-01-18
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -720,18 +751,79 @@ Zawiera on statystyki dotyczące krajów z całego świata, obejmujące: *
 <h3>Ładowanie pakietów i danych</h3>
 <pre class="r"><code>library(tidyverse)
 library(gapminder)
-library(knitr)</code></pre>
-</div>
-<div id="pierwsze-6-wierszy" class="section level3">
-<h3>Pierwsze 6 wierszy</h3>
-<p>kable(head(gapminder), caption = “Pierwsze 6 wierszy zbioru
-gapminder”)</p>
-</div>
-</div>
-<div id="przetwarzanie-danych" class="section level2">
-<h2>2. Przetwarzanie danych</h2>
-<div id="filtrowanie-danych-dla-roku-2007" class="section level3">
-<h3>Filtrowanie danych dla roku 2007</h3>
+library(knitr)
+
+
+### Pierwsze 6 wierszy
+
+kable(head(gapminder), caption = &quot;Pierwsze 6 wierszy zbioru gapminder&quot;)</code></pre>
+<table>
+<caption>Pierwsze 6 wierszy zbioru gapminder</caption>
+<thead>
+<tr class="header">
+<th align="left">country</th>
+<th align="left">continent</th>
+<th align="right">year</th>
+<th align="right">lifeExp</th>
+<th align="right">pop</th>
+<th align="right">gdpPercap</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Afghanistan</td>
+<td align="left">Asia</td>
+<td align="right">1952</td>
+<td align="right">28.801</td>
+<td align="right">8425333</td>
+<td align="right">779.4453</td>
+</tr>
+<tr class="even">
+<td align="left">Afghanistan</td>
+<td align="left">Asia</td>
+<td align="right">1957</td>
+<td align="right">30.332</td>
+<td align="right">9240934</td>
+<td align="right">820.8530</td>
+</tr>
+<tr class="odd">
+<td align="left">Afghanistan</td>
+<td align="left">Asia</td>
+<td align="right">1962</td>
+<td align="right">31.997</td>
+<td align="right">10267083</td>
+<td align="right">853.1007</td>
+</tr>
+<tr class="even">
+<td align="left">Afghanistan</td>
+<td align="left">Asia</td>
+<td align="right">1967</td>
+<td align="right">34.020</td>
+<td align="right">11537966</td>
+<td align="right">836.1971</td>
+</tr>
+<tr class="odd">
+<td align="left">Afghanistan</td>
+<td align="left">Asia</td>
+<td align="right">1972</td>
+<td align="right">36.088</td>
+<td align="right">13079460</td>
+<td align="right">739.9811</td>
+</tr>
+<tr class="even">
+<td align="left">Afghanistan</td>
+<td align="left">Asia</td>
+<td align="right">1977</td>
+<td align="right">38.438</td>
+<td align="right">14880372</td>
+<td align="right">786.1134</td>
+</tr>
+</tbody>
+</table>
+<pre class="r"><code>## 2. Przetwarzanie danych
+
+
+### Filtrowanie danych dla roku 2007</code></pre>
 <pre class="r"><code>dane_2007 &lt;- gapminder %&gt;%
   filter(year == 2007) %&gt;%
   mutate(pkb_calkowite = gdpPercap * pop)</code></pre>
@@ -810,6 +902,43 @@ kable(statystyki_kontynenty, caption = &quot;Tabela 2: Statystyki zagregowane dl
   ) +
   theme_minimal()</code></pre>
 <p><img src="figure/analiza.Rmd/unnamed-chunk-3-1.png" alt="" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-3-1">
+Past versions of unnamed-chunk-3-1.png
+</button>
+</p>
+<div id="fig-unnamed-chunk-3-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/michalos1608/Strona_R/blob/d4cf33b145c54ace8043fe085f0970ba60f195fb/docs/figure/analiza.Rmd/unnamed-chunk-3-1.png" target="_blank">d4cf33b</a>
+</td>
+<td>
+michalos1608
+</td>
+<td>
+2026-01-18
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <pre class="r"><code>ggplot(dane_2007, aes(x = gdpPercap, y = lifeExp, color = continent, size = pop)) +
   geom_point(alpha = 0.7) +
   scale_x_log10() + 
@@ -844,6 +973,17 @@ Date
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+<a href="https://github.com/michalos1608/Strona_R/blob/d4cf33b145c54ace8043fe085f0970ba60f195fb/docs/figure/analiza.Rmd/unnamed-chunk-4-1.png" target="_blank">d4cf33b</a>
+</td>
+<td>
+michalos1608
+</td>
+<td>
+2026-01-18
+</td>
+</tr>
 <tr>
 <td>
 <a href="https://github.com/michalos1608/Strona_R/blob/a67b371e5c339444125adfdca8eb69daf25ef5ee/docs/figure/analiza.Rmd/unnamed-chunk-4-1.png" target="_blank">a67b371</a>
@@ -891,6 +1031,17 @@ Date
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+<a href="https://github.com/michalos1608/Strona_R/blob/d4cf33b145c54ace8043fe085f0970ba60f195fb/docs/figure/analiza.Rmd/unnamed-chunk-5-1.png" target="_blank">d4cf33b</a>
+</td>
+<td>
+michalos1608
+</td>
+<td>
+2026-01-18
+</td>
+</tr>
 <tr>
 <td>
 <a href="https://github.com/michalos1608/Strona_R/blob/a67b371e5c339444125adfdca8eb69daf25ef5ee/docs/figure/analiza.Rmd/unnamed-chunk-5-1.png" target="_blank">a67b371</a>
