@@ -1,6 +1,6 @@
 ---
-title: "Moja Pasja: Wędkarstwo"
-author: "Twoje Imię"
+title: "Moje Zainteresowania"
+author: "Michal Kowalsky"
 format: 
   revealjs:
     theme: league
