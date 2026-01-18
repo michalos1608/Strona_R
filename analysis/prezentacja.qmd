@@ -1,0 +1,95 @@
+---
+title: "Moja Pasja: Wędkarstwo"
+author: "Twoje Imię"
+format: 
+  revealjs:
+    theme: league
+    transition: fade
+---
+
+## O mnie
+
+Nazywam się Michał.
+Studiuję Informatykę i Inżynierię Danych.
+W tej prezetacji przedstawie moje zainteresowania
+
+---
+
+## Wędkarstwo
+
+Wędkarstwo to dla mnie idealny balans między sportem a odpoczynkiem.
+---
+
+### Gatunki ryb
+
+* **Szczupak** – król jezior.
+* **Okoń** – mniejszy, ale bardzo waleczny i inteligentny.
+* **Sandacz** – najbardziej wymagający, żerujący głównie o zmierzchu.
+
+---
+
+## Aktywność w Sezonie (Wykres R)
+
+Poniższy wykres przedstawia ilość złowionych przeze mnie ryb danego gatunku.
+
+```{r}
+library(ggplot2)
+
+#Dane - zlowione ryby
+rybki <- data.frame(
+  gatunek = c("Płotka", "Karaś", "Karp", "Szczupak", "Okoń", "Sandacz"),
+  ilosc = c(24, 9, 12, 15, 22, 16)
+)
+
+# Wykres slupkowy
+ggplot(rybki, aes(x = gatunek, y = ilosc)) +
+  geom_col(fill = "darkcyan") +
+  theme_minimal() +
+  labs(title = "Złowione ryby",
+       y = "Ilość (szt.)",
+       x = "Gatunek")
+```
+---
+
+## Gry komputerowe
+
+Moim kolejnym zainteresowaniem sa gry komputerowe. 
+
+Ulubione gry:
+-Leauge of Legends
+-Dayz
+-Path of Exile
+
+![](assets/lol.jpg){width=40%}
+
+
+---
+
+
+## Czas w grach
+
+```{R}
+#Dane o czasie gry
+
+czas <- data.frame(
+  gra = c("Leauge of Legends","DayZ","GTA V","Path of Exile 2"),
+  godziny = c(400,800,200,1500)
+)
+
+# wykres sklupkowy (poziomo)
+
+ggplot(czas, aes(x= gra, y=godziny))+
+  geom_col(fill="red")+
+  coord_flip()+
+  theme_minimal()+
+  labs(title = "Liczba godzin spędzonych w danej grze",
+       x= "",
+       y="godziny")
+```
+---
+
+## Dziękuję za uwagę
+
+Dziękuję za uwagę
+
+![](assets/like.jpg){width=40%}
